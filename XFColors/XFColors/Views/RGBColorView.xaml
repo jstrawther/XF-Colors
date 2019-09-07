@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFColors.Views.RGBColorView">
+  <ContentView.Content>
+        <StackLayout Orientation="Vertical">
+
+            <Label Text="Red" Margin="0, 5, 0, 0" />
+            <Slider Minimum="0" Maximum="1" Value="{x:Binding Red, Mode=TwoWay}" MinimumTrackColor="Red" MaximumTrackColor="Red"  />
+
+            <Label Text="Green" Margin="0, 5, 0, 0" />
+            <Slider Minimum="0" Maximum="1" Value="{x:Binding Green, Mode=TwoWay}" MinimumTrackColor="Green" MaximumTrackColor="Green" />
+
+            <Label Text="Blue" Margin="0, 5, 0, 0" />
+            <Slider Minimum="0" Maximum="1" Value="{x:Binding Blue, Mode=TwoWay}" MinimumTrackColor="Blue" MaximumTrackColor="Blue" />
+            
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

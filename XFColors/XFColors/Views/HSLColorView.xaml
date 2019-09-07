@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XFColors.Views.HSLColorView">
+    <ContentView.Content>
+        <StackLayout Orientation="Vertical">
+
+            <Label Text="Hue" Margin="0, 5, 0, 0" />
+            <Slider Minimum="0" Maximum="1" Value="{x:Binding Hue, Mode=TwoWay}" MinimumTrackColor="Black" MaximumTrackColor="Black" />
+
+            <Label Text="Saturation" Margin="0, 5, 0, 0" />
+            <Slider Minimum="0" Maximum="1" Value="{x:Binding Saturation, Mode=TwoWay}" MinimumTrackColor="Black" MaximumTrackColor="Black" />
+
+            <Label Text="Luminosity" Margin="0, 5, 0, 0" />
+            <Slider Minimum="0" Maximum="1" Value="{x:Binding Luminosity, Mode=TwoWay}" MinimumTrackColor="Black" MaximumTrackColor="Black" />
+
+            <Label Text="Alpha" Margin="0, 5, 0, 0" />
+            <Slider Minimum="0" Maximum="1" Value="{x:Binding Alpha, Mode=TwoWay}" MinimumTrackColor="Black" MaximumTrackColor="Black" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
